@@ -1,148 +1,4 @@
-EEEE.........EEEE
-======================================================================
-ERROR: test_init (__main__.TestImageFileLoader.test_init)
-Test ImageFileLoader initialization.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
-    return func(*newargs, **newkeywargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 195, in test_init
-    loader = ImageFileLoader("cpu", 0, self.dummy_image_path)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\image_file_loader.py", line 40, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
-
-======================================================================
-ERROR: test_load_method (__main__.TestImageFileLoader.test_load_method)
-Test the load method's image processing and data setting.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
-    return func(*newargs, **newkeywargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 222, in test_load_method
-    loader = ImageFileLoader("cpu", 0, self.dummy_image_path)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\image_file_loader.py", line 40, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
-
-======================================================================
-ERROR: test_init (__main__.TestImageObjectLoader.test_init)
-Test ImageObjectLoader initialization.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
-    return func(*newargs, **newkeywargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 262, in test_init
-    loader = ImageObjectLoader("cuda", 1)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\image_object_loader.py", line 33, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
-
-======================================================================
-ERROR: test_load_method (__main__.TestImageObjectLoader.test_load_method)
-Test the load method's image object handling and data setting.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
-    return func(*newargs, **newkeywargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 282, in test_load_method
-    loader = ImageObjectLoader("cpu", 0)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\image_object_loader.py", line 33, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
-
-======================================================================
-ERROR: test_init_and_load (__main__.TestVideoLoader.test_init_and_load)
-Test VideoLoader initialization and internal __load method.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
-    return func(*newargs, **newkeywargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 339, in test_init_and_load
-    loader = VideoLoader("cpu", 0, self.dummy_video_path, self.fps)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\video_loader.py", line 20, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
-
-======================================================================
-ERROR: test_next_method (__main__.TestVideoLoader.test_next_method)
-Test the next method's data retrieval.
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
-    return func(*newargs, **newkeywargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 493, in test_next_method
-    loader = VideoLoader("cpu", 0, self.dummy_video_path, self.fps)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\video_loader.py", line 20, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
-
+FF..........F.E.
 ======================================================================
 ERROR: test_play_method_logic (__main__.TestVideoLoader.test_play_method_logic)
 Test the core _play method logic without actual threading.
@@ -151,47 +7,90 @@ Traceback (most recent call last):
   File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
     return func(*newargs, **newkeywargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 401, in test_play_method_logic
-    loader = VideoLoader("cpu", 0, self.dummy_video_path, self.fps)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\video_loader.py", line 20, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
+  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 448, in test_play_method_logic
+    loader._play()
+  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\video_loader.py", line 61, in _play
+    image = torch.from_numpy(frame[:,:,[2,1,0]]/255.0).to(self.DEVICE).permute(2,0,1)
+                             ~~~~~^^^^^^^^^^^^^
+IndexError: too many indices for array: array is 2-dimensional, but 3 were indexed
 
 ======================================================================
-ERROR: test_play_starts_thread (__main__.TestVideoLoader.test_play_starts_thread)
-Test that the play method correctly starts a new thread.
+FAIL: test_init (__main__.TestImageFileLoader.test_init)
+Test ImageFileLoader initialization.
 ----------------------------------------------------------------------
 Traceback (most recent call last):
   File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
     return func(*newargs, **newkeywargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 471, in test_play_starts_thread
-    loader = VideoLoader("cpu", 0, self.dummy_video_path, self.fps)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\cvbf\loading\video_loader.py", line 20, in __init__
-    super().__init__(DEVICE_NAME=DEVICE_NAME, DEVICE_INDEX=DEVICE_INDEX)
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1124, in __call__
-    return self._mock_call(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1128, in _mock_call
-    return self._execute_mock_call(*args, **kwargs)
+  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 196, in test_init
+    mock_super_init.assert_called_once_with(
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 951, in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1189, in _execute_mock_call
-    result = effect(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: init_super_stub() missing 1 required positional argument: 'self_instance'
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 939, in assert_called_with
+    raise AssertionError(_error_message()) from cause
+AssertionError: expected call not found.
+Expected: __init__(DEVICE_NAME='cpu', DEVICE_INDEX=0)
+Actual: __init__(<cvbf.loading.image_file_loader.ImageFileLoader object at 0x000001CB40A0BE10>, DEVICE_NAME='cpu', DEVICE_INDEX=0)
+
+======================================================================
+FAIL: test_load_method (__main__.TestImageFileLoader.test_load_method)
+Test the load method's image processing and data setting.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 243, in test_load_method
+    mock_set_data.assert_called_once_with(
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 951, in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 939, in assert_called_with
+    raise AssertionError(_error_message()) from cause
+AssertionError: expected call not found.
+Expected: set_data(<MagicMock name='from_numpy()' spec='Tensor' id='1972472391120'>, 0, 12345.6789, UUID('c9b162bd-6218-11f0-8ea2-bc0ff3e44fd0'))
+Actual: set_data(<MagicMock name='from_numpy()' spec='Tensor' id='1972472391120'>, 0, 1752651905.1098044, UUID('c9b162bd-6218-11f0-8ea2-bc0ff3e44fd0'))
+
+======================================================================
+FAIL: test_init (__main__.TestImageObjectLoader.test_init)
+Test ImageObjectLoader initialization.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 263, in test_init
+    mock_super_init.assert_called_once_with(
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 951, in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 939, in assert_called_with
+    raise AssertionError(_error_message()) from cause
+AssertionError: expected call not found.
+Expected: __init__(DEVICE_NAME='cuda', DEVICE_INDEX=1)
+Actual: __init__(<cvbf.loading.image_object_loader.ImageObjectLoader object at 0x000001CB20D4B950>, DEVICE_NAME='cuda', DEVICE_INDEX=1)
+
+======================================================================
+FAIL: test_init_and_load (__main__.TestVideoLoader.test_init_and_load)
+Test VideoLoader initialization and internal __load method.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 1375, in patched
+    return func(*newargs, **newkeywargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\nutzer01\Documents\Repos\computer_vision_basic_functions\src\unittests.py", line 340, in test_init_and_load
+    mock_super_init.assert_called_once_with(
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 951, in assert_called_once_with
+    return self.assert_called_with(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\unittest\mock.py", line 939, in assert_called_with
+    raise AssertionError(_error_message()) from cause
+AssertionError: expected call not found.
+Expected: __init__(DEVICE_NAME='cpu', DEVICE_INDEX=0)
+Actual: __init__(<cvbf.loading.video_loader.VideoLoader object at 0x000001CB409E1490>, DEVICE_NAME='cpu', DEVICE_INDEX=0)
 
 ----------------------------------------------------------------------
-Ran 17 tests in 0.031s
+Ran 17 tests in 0.039s
 
-FAILED (errors=8)
+FAILED (failures=4, errors=1)
