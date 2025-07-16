@@ -1,0 +1,2 @@
+graft src/inner_assets
+graft outer_assets

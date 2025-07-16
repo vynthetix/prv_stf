@@ -1,0 +1,17 @@
+[project]
+name = "computer_vision_basic_functions"
+version = "0.0.1"
+description = """package to perform basic computer vision tasks for rapid development of proof of concepts and pilots"""
+authors = [
+    {name = "Sebastian Vlaic", email = "s.vlaic@schwarz-produktion.com"}
+]
+readme = "README.md"
+dependencies = ["torch"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# [project.optional-dependencies]
+# build = ["setuptools>=61.0"]
+
